@@ -172,7 +172,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -253,6 +253,7 @@ a {
 }
 .input-group .input {
   border: 0;
+  width: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
 }
@@ -436,8 +437,12 @@ a {
 }
 /*callouts*/
 .callout {
-  padding: 4rem;
+  padding: 5rem;
   border-radius: 5px;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  top: 5rem;
 }
 .callout__primary {
   background: var(--color-primary);
@@ -603,8 +608,9 @@ a {
   max-width: 670px;
 }
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -630,7 +636,7 @@ a {
 }
 /*featur*/
 .feature {
-  gap: 4rem 2rem;
+  gap: 4rem 4rem;
   margin: 12rem 0;
 }
 .feature__heading {
